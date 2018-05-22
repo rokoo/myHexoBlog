@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Your Title
-subtitle: This is hexo theme
-author: John Doe
+title: A day is a miniature of eternity
+subtitle: 运动， 读书， 写作， 编程
+author: Ben Kwok
 language:
 timezone:
 
@@ -19,11 +19,11 @@ permalink_defaults:
 #Custom Setting Start
 
 # Site settings
-SEOTitle: Beantech | 豆科技
-email: beantech@gmail.com
+SEOTitle: Ben Kwok | 郭晓斌
+email: ben.g.kwok@gmail.com
 description: ""
 keyword: ""
-header-img: img/header_img/home-bg-2-dark.png
+header-img: img/header_img/header-bg-railway.jpg
 signature: true #show signature
 signature-img: img/signature/BeanTechSign-white.png 
 
@@ -32,17 +32,17 @@ signature-img: img/signature/BeanTechSign-white.png
 # RSS: false
 # weibo_username:     Demonbaneen
 # zhihu_username:     Demonbane
-github_username:    YenYuHsuan
+github_username:    rokoo
 # twitter_username:   Demonbane_x
-facebook_username:  YenYuHsuan
-linkedin_username:  yu-hsuan-yen
+facebook_username:  
+linkedin_username:  
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
 # Disqus settings
-disqus_username: your-disqus-ID
+disqus_username: 
 
 # Duoshuo settings
 # duoshuo_username: kaijun
@@ -60,7 +60,7 @@ ga_domain: yoursite
 
 # Sidebar settings
 sidebar: true                       # whether or not using Sidebar.
-sidebar-about-description: "Hi, i'm John Doe"
+sidebar-about-description: "Hi, i'm Ben Kwok"
 sidebar-avatar: img/ironman-draw.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 widgets:
 - featured-tags
