@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="keyword"  content="">
-    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <link rel="shortcut icon" href="/img/favicon-20180523092224957.ico">
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          tennis - Ben Kwok | 郭晓斌
+          shim层概念理解 - Ben Kwok | 郭晓斌
         
     </title>
 
@@ -74,10 +74,6 @@
         
     }
     
-    #signature{
-        background-image: url('/img/signature/BeanTechSign-white.png');
-    }
-    
 </style>
 
 <header class="intro-header" >
@@ -90,8 +86,12 @@
                     <div class="post-heading">
                         <div class="tags">
                             
+                              <a class="tag" href="/tags/#shim" title="shim">shim</a>
+                            
+                              <a class="tag" href="/tags/#concept" title="concept">concept</a>
+                            
                         </div>
-                        <h1>tennis</h1>
+                        <h1>shim层概念理解</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by Ben Kwok on
@@ -119,7 +119,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">A day is a miniature of eternity</a>
+            <a class="navbar-brand" href="/">Beware beginning</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -142,14 +142,14 @@
 
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -212,7 +212,20 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                
+                <blockquote>
+<p>最近在做区块链项目，在学习<a href="https://www.hyperledger.org/" target="_blank" rel="noopener">Hyperledger</a> 时需要看很多英文资料，很多次看到shim这个名词，不是很理解，做了下作业，发现有个解释比较好理解，在这里翻译一下供大家参考。</p>
+</blockquote>
+<h1><span id="shim概念理解">shim概念理解</span></h1>
+<p>以下是原文</p>
+<blockquote>
+<p>A shim is typically something written specifically to maintain backwards compatibility. For example, if you have two versions of an API, version 1 and version 2, then rather than maintaining version 1 independently of version 2, you might write a shim that intercepts calls to version 1 of the API, translates the parameters to what version 2 requires, and then returns the results.<br>
+Typically, a shim is written by the provider of the API, rather than consumer.<br>
+A wrapper is written by the consumer of an API and is typically written so that you can switch the underlying API without the rest of your code having to know. For example, you might write a database wrapper so that you can talk to MS SQL Server, or Oracle, just by switching wrappers.<br>
+Of course, as with any terminology, there are gray areas, but I think the above covers the main differences.</p>
+</blockquote>
+<p>意思就是<br>
+可以从提供者角度理解wrapper和shim这两个概念，wrapper是由消费者编写的封装类，用来封装调用的外部接口以达到自己更好调用的目的，而shim则是提供者编写的封装类，比如你提供了两个版本的API， ver1和ver2,你在ver2上提供了一些新的功能，而现在已经有大量的外部调用者已经调用了ver1，这时你就可以编写一个shim层，在调用ver1基础上转换成调用ver2来达到目的，而ver2也可以同时让新的调用者使用。</p>
+
                 
 
                 <hr>
@@ -247,7 +260,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="nav">none</ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">shim概念理解</span></a></li></ol>
         
         </div>
       </aside>
@@ -267,6 +280,10 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
+                          <a class="tag" href="/tags/#shim" title="shim">shim</a>
+                        
+                          <a class="tag" href="/tags/#concept" title="concept">concept</a>
+                        
                     </div>
                 </section>
                 
