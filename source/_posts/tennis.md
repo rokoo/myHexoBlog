@@ -18,4 +18,4 @@ tags:
 >Of course, as with any terminology, there are gray areas, but I think the above covers the main differences.
 
 意思就是
-可以从提供者角度理解wrapper和shim这两个概念，wrapper是由消费者编写的封装类，用来封装调用的外部接口以达到自己更好调用的目的，而shim则是提供者编写的封装类，比如你提供了两个版本的API， ver1和ver2,你在ver2上提供了一些新的功能，而现在已经有大量的外部调用者已经调用了ver1，这时你就可以编写一个shim层，在调用ver1基础上转换成调用ver2来达到目的，而ver2也可以同时让新的调用者使用。
+可以从编写者角度理解wrapper和shim这两个概念，wrapper是由消费者编写的封装类，用来封装调用的外部接口以达到自己更好调用的目的，而shim则是提供者编写的封装类，比如你提供了两个版本的API， ver1和ver2,你在ver2上提供了一些新的功能，而现在已经有大量的外部调用者已经调用了ver1，这时你就可以编写一个shim层，在调用ver1基础上转换成调用ver2来达到目的，而ver2也可以同时让新的调用者使用。
