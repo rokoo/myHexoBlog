@@ -3,7 +3,7 @@ title: 使用node-forge库实现生成数字证书以及使用证书签名验证
 catalog: true
 date: 2018-05-24 18:50:59
 subtitle:
-header-img: "/img/header_img/header-bg-railway.jpg"
+header-img: "/img/header_img/bg-houseview.jpg"
 tags:
 - nodejs
 - forge

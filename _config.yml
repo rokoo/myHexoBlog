@@ -66,7 +66,7 @@ widgets:
 - featured-tags
 - short-about
 - recent-posts
-- friends-blog
+# - friends-blog
 # - archive
 # - category
 
