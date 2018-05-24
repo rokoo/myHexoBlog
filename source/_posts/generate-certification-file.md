@@ -29,25 +29,7 @@ function generateUserCert(username) {
     cert.validity.notAfter.setFullYear(cert.validity.notBefore.getFullYear() + 1);
 
     // use your own attributes here, or supply a csr (check the docs)
-    var attrs = [{
-        name: 'commonName',
-        value: 'example.org'
-    }, {
-        name: 'countryName',
-        value: 'US'
-    }, {
-        shortName: 'ST',
-        value: 'Virginia'
-    }, {
-        name: 'localityName',
-        value: 'Blacksburg'
-    }, {
-        name: 'organizationName',
-        value: 'Test'
-    }, {
-        shortName: 'OU',
-        value: 'Test'
-    }];
+    var attrs = [];
 
     // here we set subject and issuer as the same one
     cert.setSubject(attrs);
@@ -62,9 +44,6 @@ function generateUserCert(username) {
     let privateKeyFilePath = "../certifications/" + username + ".key";
     var privateKey = forge.pki.privateKeyToPem(keys.privateKey);
     return saveFile(cerFilePath, pem).then(saveFile(privateKeyFilePath, privateKey)).then(console.log("all save success"));
-    //TODO save cert to file
-
-    // var certfrompem = pki.certificateFromPem(pem);
 }
 ```
 ### 将证书和私钥保存在文件中
