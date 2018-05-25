@@ -57,6 +57,16 @@ duoshuo_share: true                     # set to false if you want to use Commen
 ga_track_id: 'UA-XXXXXXXX-X'          # Format: UA-xxxxxx-xx
 ga_domain: yoursite
 
+# toc depth
+toc:
+  maxdepth: 3
+  class: toc
+  slugify: transliteration
+  decodeEntities: false
+  anchor:
+    position: after
+    symbol: '#'
+    style: header-anchor
 
 # Sidebar settings
 sidebar: true                       # whether or not using Sidebar.
